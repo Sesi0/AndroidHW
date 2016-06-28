@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bobby.bg.activity_hw.MainActivity">
+
+
+    <EditText
+        android:id="@+id/yearsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Години" />
+
+    <EditText
+        android:id="@+id/adressEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/yearsEditText"
+        android:layout_alignLeft="@+id/yearsEditText"
+        android:layout_alignRight="@+id/yearsEditText"
+        android:layout_alignStart="@+id/yearsEditText"
+        android:layout_below="@+id/yearsEditText"
+        android:text="Адрес" />
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/adressEditText"
+        android:layout_alignLeft="@+id/adressEditText"
+        android:layout_alignRight="@+id/adressEditText"
+        android:layout_alignStart="@+id/adressEditText"
+        android:layout_below="@+id/adressEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Град" />
+
+    <EditText
+        android:id="@+id/birthDayEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cityEditText"
+        android:layout_alignStart="@+id/cityEditText"
+        android:layout_below="@+id/cityEditText"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Дата на раждане" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthDayEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Продължи" />
+</RelativeLayout>
